@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07F05F631EDED38D00DAC84E /* Lightstreamer_iOS_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7F31B91EDDCAE2001A1723 /* Lightstreamer_iOS_Client.framework */; };
+		07F05F641EDED38D00DAC84E /* Lightstreamer_iOS_Client.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA7F31B91EDDCAE2001A1723 /* Lightstreamer_iOS_Client.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E0073552120DA0E009DAB27 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0073542120DA0E009DAB27 /* URLConstants.swift */; };
+		6E09686621207B86007912BC /* MVMarketLightstreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E09686521207B86007912BC /* MVMarketLightstreaming.swift */; };
+		6E09686B2120ADE7007912BC /* MVMarketDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E09686A2120ADE7007912BC /* MVMarketDetailsViewController.swift */; };
+		6E09686D2120B489007912BC /* MVMarketDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E09686C2120B489007912BC /* MVMarketDetailsViewModel.swift */; };
+		6E09686F2120B4B7007912BC /* MVMarketDetailsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E09686E2120B4B7007912BC /* MVMarketDetailsViewPresenter.swift */; };
+		6E0968712120B56D007912BC /* MVMarketDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0968702120B56D007912BC /* MVMarketDetailsInteractor.swift */; };
+		6E0968732120B74D007912BC /* MVMarketDetailsRawModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0968722120B74D007912BC /* MVMarketDetailsRawModel.swift */; };
+		6E0968752120B7B5007912BC /* MVMarketDetailsRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0968742120B7B5007912BC /* MVMarketDetailsRequestFactory.swift */; };
+		6E0968772120C357007912BC /* MVMarketDetailDepositMarginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0968762120C357007912BC /* MVMarketDetailDepositMarginCell.swift */; };
+		6E0968792120C623007912BC /* MVMarketDetailSpecialInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0968782120C623007912BC /* MVMarketDetailSpecialInfoCell.swift */; };
+		6E28F222211CB563003A2337 /* MVLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F221211CB563003A2337 /* MVLoginViewController.swift */; };
+		6E28F226211CB7C5003A2337 /* MVWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F225211CB7C5003A2337 /* MVWireframe.swift */; };
+		6E28F228211CB7F2003A2337 /* MVRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F227211CB7F2003A2337 /* MVRouter.swift */; };
+		6E28F22B211CB8BE003A2337 /* MVMarketWatchlistPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F22A211CB8BE003A2337 /* MVMarketWatchlistPresenter.swift */; };
+		6E28F22F211CCB1A003A2337 /* MVMarketWatchlistInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F22E211CCB1A003A2337 /* MVMarketWatchlistInteractor.swift */; };
+		6E28F232211CDCAF003A2337 /* MVLoginViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F231211CDCAF003A2337 /* MVLoginViewPresenter.swift */; };
+		6E28F234211CE28D003A2337 /* MVLoginViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F233211CE28D003A2337 /* MVLoginViewInteractor.swift */; };
+		6E28F236211CE379003A2337 /* MVLoginRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F235211CE379003A2337 /* MVLoginRequestFactory.swift */; };
+		6E28F23A211CE94E003A2337 /* MVUserAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F239211CE94E003A2337 /* MVUserAuthenticator.swift */; };
+		6E28F23C211CF507003A2337 /* MVHTTPHeaderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F23B211CF507003A2337 /* MVHTTPHeaderProvider.swift */; };
+		6E28F23E211CF833003A2337 /* MVAuthTokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F23D211CF833003A2337 /* MVAuthTokenStore.swift */; };
+		6E28F240211E152C003A2337 /* MVLightStreamerConfigurationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F23F211E152C003A2337 /* MVLightStreamerConfigurationStore.swift */; };
+		6E28F244211E23A8003A2337 /* MVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F243211E23A8003A2337 /* MVView.swift */; };
+		6E28F246211E2809003A2337 /* MVMarketRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E28F245211E2809003A2337 /* MVMarketRequestFactory.swift */; };
+		6E8A668E2120255F0033C2AD /* MVMarketRawModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8A668D2120255F0033C2AD /* MVMarketRawModel.swift */; };
+		6E8A6690212027B20033C2AD /* MVLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8A668F212027B20033C2AD /* MVLoginViewModel.swift */; };
+		6E8A6692212027E30033C2AD /* MVMarketWatchlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8A6691212027E30033C2AD /* MVMarketWatchlistViewModel.swift */; };
+		6E8A669621202EF60033C2AD /* MVMarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8A669521202EF60033C2AD /* MVMarketCell.swift */; };
+		BA7F31871EDDCA06001A1723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F31861EDDCA06001A1723 /* AppDelegate.swift */; };
+		BA7F31891EDDCA06001A1723 /* MVMarketWatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F31881EDDCA06001A1723 /* MVMarketWatchlistViewController.swift */; };
+		BA7F318C1EDDCA06001A1723 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7F318A1EDDCA06001A1723 /* Main.storyboard */; };
+		BA7F318E1EDDCA06001A1723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7F318D1EDDCA06001A1723 /* Assets.xcassets */; };
+		BA7F31911EDDCA06001A1723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7F318F1EDDCA06001A1723 /* LaunchScreen.storyboard */; };
+		BA7F319C1EDDCA07001A1723 /* MarketViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F319B1EDDCA07001A1723 /* MarketViewerTests.swift */; };
+		BA7F31A71EDDCA07001A1723 /* MarketViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F31A61EDDCA07001A1723 /* MarketViewerUITests.swift */; };
+		BA7F31B61EDDCAAB001A1723 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7F31B51EDDCAAB001A1723 /* SystemConfiguration.framework */; };
+		BA7F31B81EDDCAB1001A1723 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7F31B71EDDCAB1001A1723 /* Security.framework */; };
+		BA7F31BD1EDDCB1E001A1723 /* MarketLightstreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7F31BC1EDDCB1E001A1723 /* MarketLightstreamer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA7F31981EDDCA07001A1723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA7F317B1EDDCA06001A1723 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA7F31821EDDCA06001A1723;
+			remoteInfo = MarketViewer;
+		};
+		BA7F31A31EDDCA07001A1723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA7F317B1EDDCA06001A1723 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA7F31821EDDCA06001A1723;
+			remoteInfo = MarketViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07F05F651EDED38D00DAC84E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				07F05F641EDED38D00DAC84E /* Lightstreamer_iOS_Client.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6E0073542120DA0E009DAB27 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
+		6E09686521207B86007912BC /* MVMarketLightstreaming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketLightstreaming.swift; sourceTree = "<group>"; };
+		6E09686A2120ADE7007912BC /* MVMarketDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketDetailsViewController.swift; sourceTree = "<group>"; };
+		6E09686C2120B489007912BC /* MVMarketDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketDetailsViewModel.swift; sourceTree = "<group>"; };
+		6E09686E2120B4B7007912BC /* MVMarketDetailsViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketDetailsViewPresenter.swift; sourceTree = "<group>"; };
+		6E0968702120B56D007912BC /* MVMarketDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketDetailsInteractor.swift; sourceTree = "<group>"; };
+		6E0968722120B74D007912BC /* MVMarketDetailsRawModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketDetailsRawModel.swift; sourceTree = "<group>"; };
+		6E0968742120B7B5007912BC /* MVMarketDetailsRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketDetailsRequestFactory.swift; sourceTree = "<group>"; };
+		6E0968762120C357007912BC /* MVMarketDetailDepositMarginCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketDetailDepositMarginCell.swift; sourceTree = "<group>"; };
+		6E0968782120C623007912BC /* MVMarketDetailSpecialInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketDetailSpecialInfoCell.swift; sourceTree = "<group>"; };
+		6E28F221211CB563003A2337 /* MVLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLoginViewController.swift; sourceTree = "<group>"; };
+		6E28F225211CB7C5003A2337 /* MVWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVWireframe.swift; sourceTree = "<group>"; };
+		6E28F227211CB7F2003A2337 /* MVRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVRouter.swift; sourceTree = "<group>"; };
+		6E28F22A211CB8BE003A2337 /* MVMarketWatchlistPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketWatchlistPresenter.swift; sourceTree = "<group>"; };
+		6E28F22E211CCB1A003A2337 /* MVMarketWatchlistInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketWatchlistInteractor.swift; sourceTree = "<group>"; };
+		6E28F231211CDCAF003A2337 /* MVLoginViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLoginViewPresenter.swift; sourceTree = "<group>"; };
+		6E28F233211CE28D003A2337 /* MVLoginViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLoginViewInteractor.swift; sourceTree = "<group>"; };
+		6E28F235211CE379003A2337 /* MVLoginRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLoginRequestFactory.swift; sourceTree = "<group>"; };
+		6E28F239211CE94E003A2337 /* MVUserAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVUserAuthenticator.swift; sourceTree = "<group>"; };
+		6E28F23B211CF507003A2337 /* MVHTTPHeaderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVHTTPHeaderProvider.swift; sourceTree = "<group>"; };
+		6E28F23D211CF833003A2337 /* MVAuthTokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVAuthTokenStore.swift; sourceTree = "<group>"; };
+		6E28F23F211E152C003A2337 /* MVLightStreamerConfigurationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLightStreamerConfigurationStore.swift; sourceTree = "<group>"; };
+		6E28F243211E23A8003A2337 /* MVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVView.swift; sourceTree = "<group>"; };
+		6E28F245211E2809003A2337 /* MVMarketRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketRequestFactory.swift; sourceTree = "<group>"; };
+		6E8A668D2120255F0033C2AD /* MVMarketRawModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketRawModel.swift; sourceTree = "<group>"; };
+		6E8A668F212027B20033C2AD /* MVLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLoginViewModel.swift; sourceTree = "<group>"; };
+		6E8A6691212027E30033C2AD /* MVMarketWatchlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketWatchlistViewModel.swift; sourceTree = "<group>"; };
+		6E8A669521202EF60033C2AD /* MVMarketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketCell.swift; sourceTree = "<group>"; };
+		BA7F31831EDDCA06001A1723 /* MarketViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7F31861EDDCA06001A1723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA7F31881EDDCA06001A1723 /* MVMarketWatchlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMarketWatchlistViewController.swift; sourceTree = "<group>"; };
+		BA7F318B1EDDCA06001A1723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA7F318D1EDDCA06001A1723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA7F31901EDDCA06001A1723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA7F31921EDDCA06001A1723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA7F31971EDDCA07001A1723 /* MarketViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7F319B1EDDCA07001A1723 /* MarketViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewerTests.swift; sourceTree = "<group>"; };
+		BA7F319D1EDDCA07001A1723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA7F31A21EDDCA07001A1723 /* MarketViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7F31A61EDDCA07001A1723 /* MarketViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewerUITests.swift; sourceTree = "<group>"; };
+		BA7F31A81EDDCA07001A1723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA7F31B51EDDCAAB001A1723 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BA7F31B71EDDCAB1001A1723 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BA7F31B91EDDCAE2001A1723 /* Lightstreamer_iOS_Client.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lightstreamer_iOS_Client.framework; path = MarketViewer/Frameworks/Lightstreamer_iOS_Client.framework; sourceTree = "<group>"; };
+		BA7F31BC1EDDCB1E001A1723 /* MarketLightstreamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketLightstreamer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA7F31801EDDCA06001A1723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7F31B81EDDCAB1001A1723 /* Security.framework in Frameworks */,
+				07F05F631EDED38D00DAC84E /* Lightstreamer_iOS_Client.framework in Frameworks */,
+				BA7F31B61EDDCAAB001A1723 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7F31941EDDCA07001A1723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7F319F1EDDCA07001A1723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E0968692120ADD0007912BC /* Market Details */ = {
+			isa = PBXGroup;
+			children = (
+				6E09686A2120ADE7007912BC /* MVMarketDetailsViewController.swift */,
+				6E09686C2120B489007912BC /* MVMarketDetailsViewModel.swift */,
+				6E09686E2120B4B7007912BC /* MVMarketDetailsViewPresenter.swift */,
+				6E0968702120B56D007912BC /* MVMarketDetailsInteractor.swift */,
+				6E0968722120B74D007912BC /* MVMarketDetailsRawModel.swift */,
+				6E0968762120C357007912BC /* MVMarketDetailDepositMarginCell.swift */,
+				6E0968782120C623007912BC /* MVMarketDetailSpecialInfoCell.swift */,
+			);
+			path = "Market Details";
+			sourceTree = "<group>";
+		};
+		6E28F220211CB52F003A2337 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6E28F224211CB7B2003A2337 /* Routing */,
+				6E28F230211CDC8D003A2337 /* Login */,
+				6E28F229211CB894003A2337 /* Market Watchlist */,
+				6E0968692120ADD0007912BC /* Market Details */,
+				6E28F243211E23A8003A2337 /* MVView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6E28F223211CB7A4003A2337 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				6E28F235211CE379003A2337 /* MVLoginRequestFactory.swift */,
+				6E28F245211E2809003A2337 /* MVMarketRequestFactory.swift */,
+				6E28F239211CE94E003A2337 /* MVUserAuthenticator.swift */,
+				6E28F23B211CF507003A2337 /* MVHTTPHeaderProvider.swift */,
+				6E28F23D211CF833003A2337 /* MVAuthTokenStore.swift */,
+				6E28F23F211E152C003A2337 /* MVLightStreamerConfigurationStore.swift */,
+				6E0968742120B7B5007912BC /* MVMarketDetailsRequestFactory.swift */,
+				6E0073542120DA0E009DAB27 /* URLConstants.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		6E28F224211CB7B2003A2337 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				6E28F225211CB7C5003A2337 /* MVWireframe.swift */,
+				6E28F227211CB7F2003A2337 /* MVRouter.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		6E28F229211CB894003A2337 /* Market Watchlist */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F31881EDDCA06001A1723 /* MVMarketWatchlistViewController.swift */,
+				6E28F22A211CB8BE003A2337 /* MVMarketWatchlistPresenter.swift */,
+				6E28F22E211CCB1A003A2337 /* MVMarketWatchlistInteractor.swift */,
+				6E8A668D2120255F0033C2AD /* MVMarketRawModel.swift */,
+				6E8A6691212027E30033C2AD /* MVMarketWatchlistViewModel.swift */,
+				6E8A669521202EF60033C2AD /* MVMarketCell.swift */,
+			);
+			path = "Market Watchlist";
+			sourceTree = "<group>";
+		};
+		6E28F230211CDC8D003A2337 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6E28F221211CB563003A2337 /* MVLoginViewController.swift */,
+				6E8A668F212027B20033C2AD /* MVLoginViewModel.swift */,
+				6E28F233211CE28D003A2337 /* MVLoginViewInteractor.swift */,
+				6E28F231211CDCAF003A2337 /* MVLoginViewPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BA7F317A1EDDCA06001A1723 = {
+			isa = PBXGroup;
+			children = (
+				BA7F31851EDDCA06001A1723 /* MarketViewer */,
+				BA7F319A1EDDCA07001A1723 /* MarketViewerTests */,
+				BA7F31A51EDDCA07001A1723 /* MarketViewerUITests */,
+				BA7F31841EDDCA06001A1723 /* Products */,
+				BA7F31B41EDDCAAB001A1723 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA7F31841EDDCA06001A1723 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F31831EDDCA06001A1723 /* MarketViewer.app */,
+				BA7F31971EDDCA07001A1723 /* MarketViewerTests.xctest */,
+				BA7F31A21EDDCA07001A1723 /* MarketViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA7F31851EDDCA06001A1723 /* MarketViewer */ = {
+			isa = PBXGroup;
+			children = (
+				6E28F223211CB7A4003A2337 /* Implementation */,
+				6E28F220211CB52F003A2337 /* UI */,
+				BA7F31861EDDCA06001A1723 /* AppDelegate.swift */,
+				BA7F318A1EDDCA06001A1723 /* Main.storyboard */,
+				BA7F31BB1EDDCB08001A1723 /* LightStreamerAPI */,
+				BA7F31BE1EDDCD13001A1723 /* Resources */,
+			);
+			path = MarketViewer;
+			sourceTree = "<group>";
+		};
+		BA7F319A1EDDCA07001A1723 /* MarketViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F319B1EDDCA07001A1723 /* MarketViewerTests.swift */,
+				BA7F319D1EDDCA07001A1723 /* Info.plist */,
+			);
+			path = MarketViewerTests;
+			sourceTree = "<group>";
+		};
+		BA7F31A51EDDCA07001A1723 /* MarketViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F31A61EDDCA07001A1723 /* MarketViewerUITests.swift */,
+				BA7F31A81EDDCA07001A1723 /* Info.plist */,
+			);
+			path = MarketViewerUITests;
+			sourceTree = "<group>";
+		};
+		BA7F31B41EDDCAAB001A1723 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F31B91EDDCAE2001A1723 /* Lightstreamer_iOS_Client.framework */,
+				BA7F31B71EDDCAB1001A1723 /* Security.framework */,
+				BA7F31B51EDDCAAB001A1723 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA7F31BB1EDDCB08001A1723 /* LightStreamerAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F31BC1EDDCB1E001A1723 /* MarketLightstreamer.swift */,
+				6E09686521207B86007912BC /* MVMarketLightstreaming.swift */,
+			);
+			name = LightStreamerAPI;
+			path = LightStreamer;
+			sourceTree = "<group>";
+		};
+		BA7F31BE1EDDCD13001A1723 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F318D1EDDCA06001A1723 /* Assets.xcassets */,
+				BA7F318F1EDDCA06001A1723 /* LaunchScreen.storyboard */,
+				BA7F31921EDDCA06001A1723 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA7F31821EDDCA06001A1723 /* MarketViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA7F31AB1EDDCA07001A1723 /* Build configuration list for PBXNativeTarget "MarketViewer" */;
+			buildPhases = (
+				BA7F317F1EDDCA06001A1723 /* Sources */,
+				BA7F31801EDDCA06001A1723 /* Frameworks */,
+				BA7F31811EDDCA06001A1723 /* Resources */,
+				07F05F651EDED38D00DAC84E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarketViewer;
+			productName = MarketViewer;
+			productReference = BA7F31831EDDCA06001A1723 /* MarketViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA7F31961EDDCA07001A1723 /* MarketViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA7F31AE1EDDCA07001A1723 /* Build configuration list for PBXNativeTarget "MarketViewerTests" */;
+			buildPhases = (
+				BA7F31931EDDCA07001A1723 /* Sources */,
+				BA7F31941EDDCA07001A1723 /* Frameworks */,
+				BA7F31951EDDCA07001A1723 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA7F31991EDDCA07001A1723 /* PBXTargetDependency */,
+			);
+			name = MarketViewerTests;
+			productName = MarketViewerTests;
+			productReference = BA7F31971EDDCA07001A1723 /* MarketViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA7F31A11EDDCA07001A1723 /* MarketViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA7F31B11EDDCA07001A1723 /* Build configuration list for PBXNativeTarget "MarketViewerUITests" */;
+			buildPhases = (
+				BA7F319E1EDDCA07001A1723 /* Sources */,
+				BA7F319F1EDDCA07001A1723 /* Frameworks */,
+				BA7F31A01EDDCA07001A1723 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA7F31A41EDDCA07001A1723 /* PBXTargetDependency */,
+			);
+			name = MarketViewerUITests;
+			productName = MarketViewerUITests;
+			productReference = BA7F31A21EDDCA07001A1723 /* MarketViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA7F317B1EDDCA06001A1723 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ACME;
+				TargetAttributes = {
+					BA7F31821EDDCA06001A1723 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F6KCJR9WX5;
+						ProvisioningStyle = Automatic;
+					};
+					BA7F31961EDDCA07001A1723 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA7F31821EDDCA06001A1723;
+					};
+					BA7F31A11EDDCA07001A1723 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA7F31821EDDCA06001A1723;
+					};
+				};
+			};
+			buildConfigurationList = BA7F317E1EDDCA06001A1723 /* Build configuration list for PBXProject "MarketViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA7F317A1EDDCA06001A1723;
+			productRefGroup = BA7F31841EDDCA06001A1723 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA7F31821EDDCA06001A1723 /* MarketViewer */,
+				BA7F31961EDDCA07001A1723 /* MarketViewerTests */,
+				BA7F31A11EDDCA07001A1723 /* MarketViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA7F31811EDDCA06001A1723 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7F31911EDDCA06001A1723 /* LaunchScreen.storyboard in Resources */,
+				BA7F318E1EDDCA06001A1723 /* Assets.xcassets in Resources */,
+				BA7F318C1EDDCA06001A1723 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7F31951EDDCA07001A1723 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7F31A01EDDCA07001A1723 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA7F317F1EDDCA06001A1723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E28F236211CE379003A2337 /* MVLoginRequestFactory.swift in Sources */,
+				6E0073552120DA0E009DAB27 /* URLConstants.swift in Sources */,
+				6E28F240211E152C003A2337 /* MVLightStreamerConfigurationStore.swift in Sources */,
+				6E8A669621202EF60033C2AD /* MVMarketCell.swift in Sources */,
+				6E8A6692212027E30033C2AD /* MVMarketWatchlistViewModel.swift in Sources */,
+				6E0968772120C357007912BC /* MVMarketDetailDepositMarginCell.swift in Sources */,
+				BA7F31891EDDCA06001A1723 /* MVMarketWatchlistViewController.swift in Sources */,
+				6E09686B2120ADE7007912BC /* MVMarketDetailsViewController.swift in Sources */,
+				6E28F232211CDCAF003A2337 /* MVLoginViewPresenter.swift in Sources */,
+				6E28F226211CB7C5003A2337 /* MVWireframe.swift in Sources */,
+				6E28F244211E23A8003A2337 /* MVView.swift in Sources */,
+				6E28F23C211CF507003A2337 /* MVHTTPHeaderProvider.swift in Sources */,
+				6E28F246211E2809003A2337 /* MVMarketRequestFactory.swift in Sources */,
+				6E8A6690212027B20033C2AD /* MVLoginViewModel.swift in Sources */,
+				6E0968752120B7B5007912BC /* MVMarketDetailsRequestFactory.swift in Sources */,
+				6E28F222211CB563003A2337 /* MVLoginViewController.swift in Sources */,
+				6E09686621207B86007912BC /* MVMarketLightstreaming.swift in Sources */,
+				6E28F234211CE28D003A2337 /* MVLoginViewInteractor.swift in Sources */,
+				6E0968792120C623007912BC /* MVMarketDetailSpecialInfoCell.swift in Sources */,
+				6E28F23E211CF833003A2337 /* MVAuthTokenStore.swift in Sources */,
+				6E28F22F211CCB1A003A2337 /* MVMarketWatchlistInteractor.swift in Sources */,
+				BA7F31871EDDCA06001A1723 /* AppDelegate.swift in Sources */,
+				6E09686D2120B489007912BC /* MVMarketDetailsViewModel.swift in Sources */,
+				6E09686F2120B4B7007912BC /* MVMarketDetailsViewPresenter.swift in Sources */,
+				6E28F22B211CB8BE003A2337 /* MVMarketWatchlistPresenter.swift in Sources */,
+				6E28F23A211CE94E003A2337 /* MVUserAuthenticator.swift in Sources */,
+				BA7F31BD1EDDCB1E001A1723 /* MarketLightstreamer.swift in Sources */,
+				6E28F228211CB7F2003A2337 /* MVRouter.swift in Sources */,
+				6E0968712120B56D007912BC /* MVMarketDetailsInteractor.swift in Sources */,
+				6E8A668E2120255F0033C2AD /* MVMarketRawModel.swift in Sources */,
+				6E0968732120B74D007912BC /* MVMarketDetailsRawModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7F31931EDDCA07001A1723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7F319C1EDDCA07001A1723 /* MarketViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7F319E1EDDCA07001A1723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7F31A71EDDCA07001A1723 /* MarketViewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA7F31991EDDCA07001A1723 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA7F31821EDDCA06001A1723 /* MarketViewer */;
+			targetProxy = BA7F31981EDDCA07001A1723 /* PBXContainerItemProxy */;
+		};
+		BA7F31A41EDDCA07001A1723 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA7F31821EDDCA06001A1723 /* MarketViewer */;
+			targetProxy = BA7F31A31EDDCA07001A1723 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA7F318A1EDDCA06001A1723 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA7F318B1EDDCA06001A1723 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA7F318F1EDDCA06001A1723 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA7F31901EDDCA06001A1723 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA7F31A91EDDCA07001A1723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA7F31AA1EDDCA07001A1723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA7F31AC1EDDCA07001A1723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F6KCJR9WX5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MarketViewer/Frameworks",
+				);
+				INFOPLIST_FILE = MarketViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acme.MarketViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BA7F31AD1EDDCA07001A1723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F6KCJR9WX5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MarketViewer/Frameworks",
+				);
+				INFOPLIST_FILE = MarketViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acme.MarketViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BA7F31AF1EDDCA07001A1723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MarketViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acme.MarketViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketViewer.app/MarketViewer";
+			};
+			name = Debug;
+		};
+		BA7F31B01EDDCA07001A1723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MarketViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acme.MarketViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketViewer.app/MarketViewer";
+			};
+			name = Release;
+		};
+		BA7F31B21EDDCA07001A1723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MarketViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acme.MarketViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MarketViewer;
+			};
+			name = Debug;
+		};
+		BA7F31B31EDDCA07001A1723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MarketViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acme.MarketViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MarketViewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA7F317E1EDDCA06001A1723 /* Build configuration list for PBXProject "MarketViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA7F31A91EDDCA07001A1723 /* Debug */,
+				BA7F31AA1EDDCA07001A1723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA7F31AB1EDDCA07001A1723 /* Build configuration list for PBXNativeTarget "MarketViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA7F31AC1EDDCA07001A1723 /* Debug */,
+				BA7F31AD1EDDCA07001A1723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA7F31AE1EDDCA07001A1723 /* Build configuration list for PBXNativeTarget "MarketViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA7F31AF1EDDCA07001A1723 /* Debug */,
+				BA7F31B01EDDCA07001A1723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA7F31B11EDDCA07001A1723 /* Build configuration list for PBXNativeTarget "MarketViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA7F31B21EDDCA07001A1723 /* Debug */,
+				BA7F31B31EDDCA07001A1723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA7F317B1EDDCA06001A1723 /* Project object */;
+}
